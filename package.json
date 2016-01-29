@@ -1,0 +1,25 @@
+{
+  "name": "js-simple-plurals",
+  "version": "1.0.0",
+  "description": "Just a set of plural functions for different languages",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megahertz/js-simple-plurals.git"
+  },
+  "keywords": [
+    "javascript",
+    "i18n",
+    "plural",
+    "ICU",
+    "CLDR"
+  ],
+  "author": "Alexey Prokhorov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/megahertz/js-simple-plurals/issues"
+  },
+  "homepage": "https://github.com/megahertz/js-simple-plurals",
+  "devDependencies": {
+    "universal-i18n": "*"
+  }
+}

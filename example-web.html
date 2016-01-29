@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js-simple-plurals Example</title>
+</head>
+<body>
+
+<h2>js-simple-plurals Example</h2>
+
+<form>
+    <label>
+        Number
+        <input type="number" id="number" value="1">
+    </label>
+    <div id="text"></div>
+</form>
+
+<script src="web/en.js"></script>
+<script>
+    var number = document.getElementById('number');
+    var text   = document.getElementById('text');
+
+    function pluralizeEn(number, one, many) {
+        var rules = [one, many];
+        var position = plural.en(number);
+        return rules[position];
+    }
+
+    function updateText() {
+        var content = number.value + ': ' + pluralizeEn(
+            number.value,
+            'day',
+            'days'
+        );
+        document.getElementById('text').textContent = content;
+    }
+
+    document.getElementById('number').addEventListener('change', updateText);
+    updateText();
+</script>
+
+</body>
+</html>
